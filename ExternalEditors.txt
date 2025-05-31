@@ -1,0 +1,8 @@
+
+### KATE on Flatpak Godot
+text_editor/external/exec_path = "flatpak-spawn"
+text_editor/external/exec_flags = "--host kate --start {project} --line {line} --column {col} {file}"
+
+### KATE on Distrobox Godot
+text_editor/external/exec_path = "distrobox-host-exec"
+text_editor/external/exec_flags = "kate --start {project} --line {line} --column {col} {file}"
