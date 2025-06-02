@@ -14,8 +14,13 @@ naming/script_name_casing=1
 
 [physics]
 
-3d/run_on_separate_thread=true
 3d/physics_engine="Jolt Physics"
+
+[layer_names]
+
+3d_render/layer_1="Default"
+3d_physics/layer_1="Default"
+3d_physics/layer_2="Player"
 
 - Save
 
