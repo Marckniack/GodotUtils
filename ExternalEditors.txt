@@ -21,3 +21,9 @@ text_editor/external/exec_flags = "kate --start {project} --line {line} --column
         }
     }
 }
+
+
+
+### VSCODIUM on Flatpak Godot
+text_editor/external/exec_path = "flatpak-spawn"
+text_editor/external/exec_flags = "--host com.vscodium.codium {project} --goto {file}:{line}:{col}"
