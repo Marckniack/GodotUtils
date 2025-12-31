@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="GDScript"
+          version="3"
+          kateversion="5.0"
+          section="Scripts"
+          extensions="*.gd"
+          mimetype="text/x-gdscript"
+          indenter="python"
+          author="Marco Montini"
+          license="MIT">
+
+    <highlighting>
+        <!-- Keywords -->
+        <list name="keywords">
+            <item>if</item>
+            <item>elif</item>
+            <item>else</item>
+            <item>for</item>
+            <item>while</item>
+            <item>match</item>
+            <item>break</item>
+            <item>continue</item>
+            <item>pass</item>
+            <item>return</item>
+            <item>class</item>
+            <item>class_name</item>
+            <item>extends</item>
+            <item>is</item>
+            <item>in</item>
+            <item>not</item>
+            <item>and</item>
+            <item>or</item>
+            <item>as</item>
+            <item>self</item>
+            <item>super</item>
+            <item>signal</item>
+            <item>func</item>
+            <item>static</item>
+            <item>const</item>
+            <item>enum</item>
+            <item>var</item>
+            <item>breakpoint</item>
+            <item>preload</item>
+            <item>await</item>
+            <item>yield</item>
+            <item>assert</item>
+            <item>when</item>
+            <item>set</item>
+            <item>get</item>
+        </list>
+
+        <!-- Built-in Constants -->
+        <list name="constants">
+            <item>true</item>
+            <item>false</item>
+            <item>null</item>
+            <item>PI</item>
+            <item>TAU</item>
+            <item>INF</item>
+            <item>NAN</item>
+        </list>
+
+        <!-- Built-in Types -->
+        <list name="types">
+            <item>void</item>
+            <item>bool</item>
+            <item>int</item>
+            <item>float</item>
+            <item>String</item>
+            <item>StringName</item>
+            <item>NodePath</item>
+            <item>Vector2</item>
+            <item>Vector2i</item>
+            <item>Vector3</item>
+            <item>Vector3i</item>
+            <item>Vector4</item>
+            <item>Vector4i</item>
+            <item>Color</item>
+            <item>Rect2</item>
+            <item>Rect2i</item>
+            <item>Transform2D</item>
+            <item>Transform3D</item>
+            <item>Plane</item>
+            <item>Quaternion</item>
+            <item>AABB</item>
+            <item>Basis</item>
+            <item>Projection</item>
+            <item>RID</item>
+            <item>Object</item>
+            <item>Callable</item>
+            <item>Signal</item>
+            <item>Dictionary</item>
+            <item>Array</item>
+            <item>PackedByteArray</item>
+            <item>PackedInt32Array</item>
+            <item>PackedInt64Array</item>
+            <item>PackedFloat32Array</item>
+            <item>PackedFloat64Array</item>
+            <item>PackedStringArray</item>
+            <item>PackedVector2Array</item>
+            <item>PackedVector3Array</item>
+            <item>PackedVector4Array</item>
+            <item>PackedColorArray</item>
+        </list>
+
+        <!-- Built-in Functions -->
+        <list name="builtins">
+            <item>print</item>
+            <item>print_rich</item>
+            <item>printerr</item>
+            <item>printt</item>
+            <item>prints</item>
+            <item>printraw</item>
+            <item>print_debug</item>
+            <item>print_stack</item>
+            <item>push_error</item>
+            <item>push_warning</item>
+            <item>var_to_str</item>
+            <item>str_to_var</item>
+            <item>var_to_bytes</item>
+            <item>bytes_to_var</item>
+            <item>range</item>
+            <item>load</item>
+            <item>abs</item>
+            <item>absf</item>
+            <item>absi</item>
+            <item>sign</item>
+            <item>signf</item>
+            <item>signi</item>
+            <item>sin</item>
+            <item>cos</item>
+            <item>tan</item>
+            <item>asin</item>
+            <item>acos</item>
+            <item>atan</item>
+            <item>atan2</item>
+            <item>sinh</item>
+            <item>cosh</item>
+            <item>tanh</item>
+            <item>asinh</item>
+            <item>acosh</item>
+            <item>atanh</item>
+            <item>sqrt</item>
+            <item>pow</item>
+            <item>log</item>
+            <item>exp</item>
+            <item>floor</item>
+            <item>floorf</item>
+            <item>floori</item>
+            <item>ceil</item>
+            <item>ceilf</item>
+            <item>ceili</item>
+            <item>round</item>
+            <item>roundf</item>
+            <item>roundi</item>
+            <item>snapped</item>
+            <item>snappedf</item>
+            <item>snappedi</item>
+            <item>clamp</item>
+            <item>clampf</item>
+            <item>clampi</item>
+            <item>lerp</item>
+            <item>lerpf</item>
+            <item>lerp_angle</item>
+            <item>inverse_lerp</item>
+            <item>remap</item>
+            <item>smoothstep</item>
+            <item>move_toward</item>
+            <item>rotate_toward</item>
+            <item>deg_to_rad</item>
+            <item>rad_to_deg</item>
+            <item>linear_to_db</item>
+            <item>db_to_linear</item>
+            <item>max</item>
+            <item>maxf</item>
+            <item>maxi</item>
+            <item>min</item>
+            <item>minf</item>
+            <item>mini</item>
+            <item>wrap</item>
+            <item>wrapf</item>
+            <item>wrapi</item>
+            <item>is_equal_approx</item>
+            <item>is_zero_approx</item>
+            <item>is_finite</item>
+            <item>is_inf</item>
+            <item>is_nan</item>
+            <item>is_instance_valid</item>
+            <item>is_instance_of</item>
+            <item>is_same</item>
+            <item>typeof</item>
+            <item>type_string</item>
+            <item>type_convert</item>
+            <item>str</item>
+            <item>error_string</item>
+            <item>weakref</item>
+            <item>instance_from_id</item>
+            <item>hash</item>
+            <item>seed</item>
+            <item>randf</item>
+            <item>randi</item>
+            <item>randfn</item>
+            <item>randf_range</item>
+            <item>randi_range</item>
+            <item>randomize</item>
+            <item>fmod</item>
+            <item>fposmod</item>
+            <item>posmod</item>
+            <item>bezier_derivative</item>
+            <item>bezier_interpolate</item>
+            <item>cubic_interpolate</item>
+            <item>cubic_interpolate_angle</item>
+            <item>cubic_interpolate_in_time</item>
+            <item>cubic_interpolate_angle_in_time</item>
+            <item>ease</item>
+            <item>pingpong</item>
+            <item>step_decimals</item>
+            <item>nearest_po2</item>
+            <item>bytes_to_var_with_objects</item>
+            <item>var_to_bytes_with_objects</item>
+            <item>rid_allocate_id</item>
+            <item>rid_from_int64</item>
+        </list>
+
+        <contexts>
+            <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+                <!-- Region comments (must come before regular comments) -->
+                <RegExpr attribute="Region Marker" context="RegionComment" String="^\s*#\s*region\b" beginRegion="Region"/>
+                <RegExpr attribute="Region Marker" context="RegionComment" String="^\s*#\s*endregion\b" endRegion="Region"/>
+
+                <!-- Documentation comments (##) -->
+                <RegExpr attribute="Documentation" context="DocComment" String="##"/>
+
+                <!-- Regular comments -->
+                <DetectChar attribute="Comment" context="Comment" char="#"/>
+
+                <!-- Multi-line strings (must come before regular strings) -->
+                <StringDetect attribute="String" context="TripleDoubleString" String="&quot;&quot;&quot;"/>
+                <StringDetect attribute="String" context="TripleSingleString" String="'''"/>
+
+                <!-- Regular strings -->
+                <DetectChar attribute="String" context="DoubleString" char="&quot;"/>
+                <DetectChar attribute="String" context="SingleString" char="'"/>
+
+                <!-- Raw strings -->
+                <Detect2Chars attribute="String" context="RawDoubleString" char="r" char1="&quot;"/>
+                <Detect2Chars attribute="String" context="RawSingleString" char="r" char1="'"/>
+
+                <!-- StringName literal (&"name") -->
+                <Detect2Chars attribute="StringName" context="StringNameLiteral" char="&amp;" char1="&quot;"/>
+
+                <!-- NodePath literal (^"path") -->
+                <Detect2Chars attribute="NodePath" context="NodePathLiteral" char="^" char1="&quot;"/>
+
+                <!-- Node paths with $ -->
+                <DetectChar attribute="NodePath" context="NodePathDollar" char="$"/>
+
+                <!-- Unique node paths with % -->
+                <DetectChar attribute="NodePath" context="UniqueNodePath" char="%"/>
+
+                <!-- Annotations -->
+                <RegExpr attribute="Annotation" context="#stay" String="@[a-zA-Z_][a-zA-Z0-9_]*"/>
+
+                <!-- Numbers -->
+                <RegExpr attribute="Hex" context="#stay" String="0[xX][0-9a-fA-F_]+"/>
+                <RegExpr attribute="Binary" context="#stay" String="0[bB][01_]+"/>
+                <RegExpr attribute="Float" context="#stay" String="[0-9][0-9_]*\.[0-9_]*([eE][+-]?[0-9_]+)?"/>
+                <RegExpr attribute="Float" context="#stay" String="\.[0-9][0-9_]*([eE][+-]?[0-9_]+)?"/>
+                <RegExpr attribute="Float" context="#stay" String="[0-9][0-9_]*[eE][+-]?[0-9_]+"/>
+                <RegExpr attribute="Decimal" context="#stay" String="[0-9][0-9_]*"/>
+
+                <!-- Keywords, types, and builtins (must come before function calls) -->
+                <keyword attribute="Keyword" context="#stay" String="keywords"/>
+                <keyword attribute="Constant" context="#stay" String="constants"/>
+                <keyword attribute="Data Type" context="#stay" String="types"/>
+                <keyword attribute="Built-in" context="#stay" String="builtins"/>
+
+                <!-- Function definitions: func name -->
+                <RegExpr attribute="Function Name" context="#stay" String="(?&lt;=func\s)[a-zA-Z_][a-zA-Z0-9_]*"/>
+
+                <!-- Signal definitions: signal name -->
+                <RegExpr attribute="Signal Name" context="#stay" String="(?&lt;=signal\s)[a-zA-Z_][a-zA-Z0-9_]*"/>
+
+                <!-- Function calls: name( or name ( -->
+                <RegExpr attribute="Function Call" context="#stay" String="[a-zA-Z_][a-zA-Z0-9_]*(?=\s*\()"/>
+
+                <!-- Method calls after dot: .method( -->
+                <RegExpr attribute="Function Call" context="#stay" String="(?&lt;=\.)[a-zA-Z_][a-zA-Z0-9_]*(?=\s*\()"/>
+
+                <!-- Class names (starting with uppercase, not followed by parenthesis) -->
+                <RegExpr attribute="Class Name" context="#stay" String="\b[A-Z][a-zA-Z0-9_]*\b(?!\s*\()"/>
+
+                <!-- Operators -->
+                <StringDetect attribute="Operator" context="#stay" String="-&gt;"/>
+                <StringDetect attribute="Operator" context="#stay" String=":="/>
+                <StringDetect attribute="Operator" context="#stay" String="=="/>
+                <StringDetect attribute="Operator" context="#stay" String="!="/>
+                <StringDetect attribute="Operator" context="#stay" String="&lt;="/>
+                <StringDetect attribute="Operator" context="#stay" String="&gt;="/>
+                <StringDetect attribute="Operator" context="#stay" String="&amp;&amp;"/>
+                <StringDetect attribute="Operator" context="#stay" String="||"/>
+                <StringDetect attribute="Operator" context="#stay" String="&lt;&lt;"/>
+                <StringDetect attribute="Operator" context="#stay" String="&gt;&gt;"/>
+                <StringDetect attribute="Operator" context="#stay" String="+="/>
+                <StringDetect attribute="Operator" context="#stay" String="-="/>
+                <StringDetect attribute="Operator" context="#stay" String="*="/>
+                <StringDetect attribute="Operator" context="#stay" String="/="/>
+                <StringDetect attribute="Operator" context="#stay" String="%="/>
+                <StringDetect attribute="Operator" context="#stay" String="**"/>
+                <AnyChar attribute="Operator" context="#stay" String="+-*/%=&lt;&gt;!&amp;|^~:,."/>
+
+                <!-- Brackets -->
+                <AnyChar attribute="Bracket" context="#stay" String="()[]{}"/>
+
+                <!-- Identifiers (variables and other names) -->
+                <RegExpr attribute="Normal Text" context="#stay" String="[a-zA-Z_][a-zA-Z0-9_]*"/>
+            </context>
+
+            <!-- Regular Comments -->
+            <context name="Comment" attribute="Comment" lineEndContext="#pop">
+                <DetectSpaces/>
+                <RegExpr attribute="Alert" context="#stay" String="\b(TODO|FIXME|HACK|NOTE|XXX|BUG|OPTIMIZE|DEPRECATED)\b"/>
+            </context>
+
+            <!-- Documentation Comments (##) -->
+            <context name="DocComment" attribute="Documentation" lineEndContext="#pop">
+                <DetectSpaces/>
+                <RegExpr attribute="DocTag" context="#stay" String="@[a-zA-Z_]+"/>
+                <RegExpr attribute="DocCode" context="#stay" String="`[^`]+`"/>
+                <RegExpr attribute="DocTag" context="#stay" String="\[/?[a-zA-Z_]+[^\]]*\]"/>
+            </context>
+
+            <!-- Region Comments -->
+            <context name="RegionComment" attribute="Region Marker" lineEndContext="#pop">
+                <DetectSpaces/>
+                <RegExpr attribute="Region Name" context="#stay" String=".+"/>
+            </context>
+
+            <!-- Double-quoted strings -->
+            <context name="DoubleString" attribute="String" lineEndContext="#pop">
+                <DetectChar attribute="String" context="#pop" char="&quot;"/>
+                <RegExpr attribute="Escape" context="#stay" String="\\(x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6}|[nrtv\\&quot;'0abf])"/>
+                <RegExpr attribute="StringInterpolation" context="#stay" String="\{[^}]*\}"/>
+            </context>
+
+            <!-- Single-quoted strings -->
+            <context name="SingleString" attribute="String" lineEndContext="#pop">
+                <DetectChar attribute="String" context="#pop" char="'"/>
+                <RegExpr attribute="Escape" context="#stay" String="\\(x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6}|[nrtv\\&quot;'0abf])"/>
+            </context>
+
+            <!-- Triple double-quoted strings (multiline) -->
+            <context name="TripleDoubleString" attribute="String" lineEndContext="#stay">
+                <StringDetect attribute="String" context="#pop" String="&quot;&quot;&quot;"/>
+                <RegExpr attribute="Escape" context="#stay" String="\\(x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6}|[nrtv\\&quot;'0abf])"/>
+            </context>
+
+            <!-- Triple single-quoted strings (multiline) -->
+            <context name="TripleSingleString" attribute="String" lineEndContext="#stay">
+                <StringDetect attribute="String" context="#pop" String="'''"/>
+                <RegExpr attribute="Escape" context="#stay" String="\\(x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6}|[nrtv\\&quot;'0abf])"/>
+            </context>
+
+            <!-- Raw strings -->
+            <context name="RawDoubleString" attribute="String" lineEndContext="#pop">
+                <DetectChar attribute="String" context="#pop" char="&quot;"/>
+            </context>
+
+            <context name="RawSingleString" attribute="String" lineEndContext="#pop">
+                <DetectChar attribute="String" context="#pop" char="'"/>
+            </context>
+
+            <!-- StringName literal (&"name") -->
+            <context name="StringNameLiteral" attribute="StringName" lineEndContext="#pop">
+                <DetectChar attribute="StringName" context="#pop" char="&quot;"/>
+                <RegExpr attribute="Escape" context="#stay" String="\\(x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6}|[nrtv\\&quot;'0abf])"/>
+            </context>
+
+            <!-- NodePath literal (^"path") -->
+            <context name="NodePathLiteral" attribute="NodePath" lineEndContext="#pop">
+                <DetectChar attribute="NodePath" context="#pop" char="&quot;"/>
+            </context>
+
+            <!-- Node paths with $ -->
+            <context name="NodePathDollar" attribute="NodePath" lineEndContext="#pop">
+                <RegExpr attribute="NodePath" context="#pop" String="[a-zA-Z_][a-zA-Z0-9_/%.]*"/>
+                <DetectChar attribute="String" context="NodePathQuoted" char="&quot;"/>
+                <DetectChar attribute="Normal Text" context="#pop" char=" " lookAhead="true"/>
+            </context>
+
+            <!-- Quoted node path after $ -->
+            <context name="NodePathQuoted" attribute="NodePath" lineEndContext="#pop">
+                <DetectChar attribute="String" context="#pop#pop" char="&quot;"/>
+            </context>
+
+            <!-- Unique node paths with % -->
+            <context name="UniqueNodePath" attribute="NodePath" lineEndContext="#pop">
+                <RegExpr attribute="NodePath" context="#pop" String="[a-zA-Z_][a-zA-Z0-9_]*"/>
+                <DetectChar attribute="Normal Text" context="#pop" char=" " lookAhead="true"/>
+            </context>
+        </contexts>
+
+        <itemDatas>
+            <itemData name="Normal Text" defStyleNum="dsNormal" spellChecking="false"/>
+            <itemData name="Keyword" defStyleNum="dsKeyword" spellChecking="false"/>
+            <itemData name="Constant" defStyleNum="dsConstant" spellChecking="false"/>
+            <itemData name="Data Type" defStyleNum="dsDataType" spellChecking="false"/>
+            <itemData name="Built-in" defStyleNum="dsBuiltIn" spellChecking="false"/>
+            <itemData name="Annotation" defStyleNum="dsAttribute" spellChecking="false"/>
+            <itemData name="Function Name" defStyleNum="dsFunction" spellChecking="false"/>
+            <itemData name="Function Call" defStyleNum="dsFunction" spellChecking="false"/>
+            <itemData name="Signal Name" defStyleNum="dsFunction" spellChecking="false" italic="true"/>
+            <itemData name="Class Name" defStyleNum="dsDataType" spellChecking="false"/>
+            <itemData name="String" defStyleNum="dsString"/>
+            <itemData name="StringName" defStyleNum="dsSpecialString" spellChecking="false"/>
+            <itemData name="Escape" defStyleNum="dsSpecialChar" spellChecking="false"/>
+            <itemData name="StringInterpolation" defStyleNum="dsSpecialString" spellChecking="false"/>
+            <itemData name="Comment" defStyleNum="dsComment"/>
+            <itemData name="Documentation" defStyleNum="dsDocumentation"/>
+            <itemData name="DocTag" defStyleNum="dsAnnotation" spellChecking="false"/>
+            <itemData name="DocCode" defStyleNum="dsVerbatimString" spellChecking="false"/>
+            <itemData name="Region Marker" defStyleNum="dsRegionMarker" spellChecking="false"/>
+            <itemData name="Region Name" defStyleNum="dsRegionMarker" spellChecking="false" italic="true"/>
+            <itemData name="Alert" defStyleNum="dsAlert" spellChecking="false"/>
+            <itemData name="Decimal" defStyleNum="dsDecVal" spellChecking="false"/>
+            <itemData name="Float" defStyleNum="dsFloat" spellChecking="false"/>
+            <itemData name="Hex" defStyleNum="dsBaseN" spellChecking="false"/>
+            <itemData name="Binary" defStyleNum="dsBaseN" spellChecking="false"/>
+            <itemData name="Operator" defStyleNum="dsOperator" spellChecking="false"/>
+            <itemData name="Bracket" defStyleNum="dsOperator" spellChecking="false"/>
+            <itemData name="NodePath" defStyleNum="dsSpecialString" spellChecking="false"/>
+        </itemDatas>
+    </highlighting>
+
+    <general>
+        <comments>
+            <comment name="singleLine" start="#" position="afterwhitespace"/>
+        </comments>
+        <keywords casesensitive="1"/>
+        <folding indentationsensitive="1"/>
+        <emptyLines>
+            <emptyLine regexpr="\s+"/>
+            <emptyLine regexpr="\s*#.*"/>
+        </emptyLines>
+    </general>
+</language>
