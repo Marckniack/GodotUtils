@@ -1,0 +1,20 @@
+# Install wivrn
+flatpak install flathub io.github.wivrn.wivrn
+
+# Enable Avahi
+systemctl enable --now avahi-daemon
+
+# Give Permissions to godot flatpak
+flatpak override \
+  --filesystem=xdg-run/wivrn:ro \
+  --filesystem=xdg-data/flatpak/app/io.github.wivrn.wivrn:ro \
+  --filesystem=/var/lib/flatpak/app/io.github.wivrn.wivrn:ro \
+  --filesystem=xdg-config/openxr:ro \
+  --filesystem=xdg-config/openvr:ro \
+  io.github.MakovWait.Godots
+
+# IN editor_settings-X.X.tres or from editor settings > XR, set Monado Path as:
+xr/openxr/runtime_paths = {
+"Monado": "~/.config/openxr/1/active_runtime.json",
+"SteamVR": "~/.steam/steam/steamapps/common/SteamVR/steamxr_linux64.json"
+}
