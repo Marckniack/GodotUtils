@@ -28,6 +28,10 @@ text_editor/external/exec_flags = "kate --start {project} --line {line} --column
 text_editor/external/exec_path = "flatpak-spawn"
 text_editor/external/exec_flags = "--host com.vscodium.codium {project} --goto {file}:{line}:{col}"
 
+### ZED on Flatpak Godot
+text_editor/external/exec_path = "flatpak-spawn"
+text_editor/external/exec_flags = "--host dev.zed.Zed {project} {file}:{line}:{col}"
+
 ### VSCODIUM on Distrobox Godot
 text_editor/external/exec_path = "codium"
 text_editor/external/exec_flags = "{project} --goto {file}:{line}:{col}"
