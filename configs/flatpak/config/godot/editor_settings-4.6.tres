@@ -1,0 +1,265 @@
+[gd_resource type="EditorSettings" format=3]
+
+[sub_resource type="InputEventKey" id="InputEventKey_4xtur"]
+alt_pressed = true
+ctrl_pressed = true
+pressed = true
+keycode = 73
+
+[sub_resource type="Shortcut" id="Shortcut_boxt3"]
+events = [SubResource("InputEventKey_4xtur")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_p1ml1"]
+device = -1
+command_or_control_autoremap = true
+keycode = 79
+
+[sub_resource type="Shortcut" id="Shortcut_fhmmy"]
+events = [SubResource("InputEventKey_p1ml1")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_x8txm"]
+device = -1
+alt_pressed = true
+keycode = 4194311
+
+[sub_resource type="Shortcut" id="Shortcut_8wxxo"]
+events = [SubResource("InputEventKey_x8txm")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ndm10"]
+device = -1
+keycode = 4194325
+
+[sub_resource type="Shortcut" id="Shortcut_viho1"]
+events = [SubResource("InputEventKey_ndm10")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_imsa1"]
+device = -1
+command_or_control_autoremap = true
+keycode = 85
+
+[sub_resource type="Shortcut" id="Shortcut_0keyc"]
+events = [SubResource("InputEventKey_imsa1")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_oj3yc"]
+device = -1
+shift_pressed = true
+ctrl_pressed = true
+keycode = 4194306
+
+[sub_resource type="Shortcut" id="Shortcut_xhdve"]
+events = [SubResource("InputEventKey_oj3yc")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_1h1k4"]
+device = -1
+ctrl_pressed = true
+keycode = 4194306
+
+[sub_resource type="Shortcut" id="Shortcut_eohw7"]
+events = [SubResource("InputEventKey_1h1k4")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_70nmy"]
+keycode = 4194326
+
+[sub_resource type="InputEventKey" id="InputEventKey_viho1"]
+device = -1
+physical_keycode = 71
+unicode = 103
+
+[sub_resource type="InputEventKey" id="InputEventKey_fhmmy"]
+device = -1
+physical_keycode = 82
+unicode = 114
+
+[sub_resource type="InputEventKey" id="InputEventKey_8wxxo"]
+device = -1
+physical_keycode = 83
+unicode = 115
+
+[sub_resource type="InputEventKey" id="InputEventKey_0keyc"]
+device = -1
+alt_pressed = true
+ctrl_pressed = true
+physical_keycode = 70
+unicode = 102
+
+[resource]
+interface/editor/display_scale = 7
+interface/editor/custom_display_scale = 0.9
+interface/editor/save_on_focus_loss = true
+interface/inspector/float_drag_speed = 3.0
+interface/inspector/default_color_picker_mode = 1
+interface/theme/color_preset = "Custom"
+interface/theme/spacing_preset = "Custom"
+interface/theme/base_color = Color(0.23, 0.23, 0.23, 1)
+interface/theme/accent_color = Color(0.337, 0.62, 1, 1)
+interface/theme/contrast = 0.2
+interface/theme/draw_relationship_lines = 2
+interface/theme/relationship_line_opacity = 0.4
+interface/theme/corner_radius = 3
+interface/theme/base_spacing = 3
+interface/scene_tabs/display_close_button = 2
+interface/scene_tabs/show_script_button = true
+filesystem/external_programs/raster_image_editor = "/home/marco/.local/share/containers/ubuntu/.local/bin/gimp"
+filesystem/external_programs/vector_image_editor = "/home/marco/.local/share/containers/ubuntu/.local/bin/inkscape"
+filesystem/external_programs/audio_editor = "/home/marco/.local/share/containers/ubuntu/.local/bin/kwave"
+filesystem/external_programs/3d_model_editor = "/home/marco/.local/share/containers/ubuntu/.local/bin/blender"
+filesystem/external_programs/terminal_emulator = "konsole"
+filesystem/directories/autoscan_project_path = "/home/marco/Documents/Projects/"
+filesystem/directories/default_project_path = "/home/marco/Documents/Projects/"
+filesystem/file_dialog/show_hidden_files = true
+filesystem/quick_open_dialog/instant_preview = true
+filesystem/import/blender/rpc_port = 0
+text_editor/theme/highlighting/symbol_color = Color(0.67, 0.79, 1, 1)
+text_editor/theme/highlighting/keyword_color = Color(1, 0.44, 0.52, 1)
+text_editor/theme/highlighting/control_flow_keyword_color = Color(1, 0.55, 0.8, 1)
+text_editor/theme/highlighting/base_type_color = Color(0.26, 1, 0.76, 1)
+text_editor/theme/highlighting/engine_type_color = Color(0.56, 1, 0.86, 1)
+text_editor/theme/highlighting/user_type_color = Color(0.78, 1, 0.93, 1)
+text_editor/theme/highlighting/comment_color = Color(1, 1, 1, 0.5)
+text_editor/theme/highlighting/doc_comment_color = Color(0.6, 0.7, 0.8, 0.8)
+text_editor/theme/highlighting/string_color = Color(1, 0.93, 0.63, 1)
+text_editor/theme/highlighting/background_color = Color(0.17480001, 0.17480001, 0.17480001, 1)
+text_editor/theme/highlighting/completion_background_color = Color(0.21620001, 0.21620001, 0.21620001, 1)
+text_editor/theme/highlighting/completion_selected_color = Color(1, 1, 1, 0.07)
+text_editor/theme/highlighting/completion_existing_color = Color(1, 1, 1, 0.14)
+text_editor/theme/highlighting/completion_font_color = Color(1, 1, 1, 0.75)
+text_editor/theme/highlighting/text_color = Color(1, 1, 1, 0.75)
+text_editor/theme/highlighting/line_number_color = Color(1, 1, 1, 0.5)
+text_editor/theme/highlighting/safe_line_number_color = Color(1, 1.2, 1, 0.75)
+text_editor/theme/highlighting/caret_color = Color(1, 1, 1, 1)
+text_editor/theme/highlighting/selection_color = Color(0.337, 0.62, 1, 0.4)
+text_editor/theme/highlighting/brace_mismatch_color = Color(1, 0.47, 0.42, 1)
+text_editor/theme/highlighting/current_line_color = Color(1, 1, 1, 0.07)
+text_editor/theme/highlighting/line_length_guideline_color = Color(0.23, 0.23, 0.23, 1)
+text_editor/theme/highlighting/word_highlighted_color = Color(1, 1, 1, 0.07)
+text_editor/theme/highlighting/number_color = Color(0.63, 1, 0.88, 1)
+text_editor/theme/highlighting/function_color = Color(0.34, 0.7, 1, 1)
+text_editor/theme/highlighting/member_variable_color = Color(0.736, 0.88, 1, 1)
+text_editor/theme/highlighting/mark_color = Color(1, 0.47, 0.42, 0.3)
+text_editor/theme/highlighting/warning_color = Color(0.83, 0.78, 0.62, 0.15)
+text_editor/theme/highlighting/breakpoint_color = Color(1, 0.47, 0.42, 1)
+text_editor/theme/highlighting/code_folding_color = Color(1, 1, 1, 0.27)
+text_editor/theme/highlighting/search_result_color = Color(1, 1, 1, 0.07)
+text_editor/appearance/gutters/line_numbers_zero_padded = true
+text_editor/appearance/minimap/minimap_width = 100
+text_editor/appearance/lines/word_wrap = 1
+text_editor/appearance/whitespace/draw_spaces = true
+text_editor/appearance/whitespace/line_spacing = 1
+text_editor/behavior/navigation/scroll_past_end_of_file = true
+text_editor/behavior/navigation/smooth_scrolling = false
+text_editor/external/exec_path = "flatpak-spawn"
+text_editor/external/exec_flags = "--host kate --start {project} --line {line} --column {col} {file}"
+text_editor/completion/idle_parse_delay = 1.0
+text_editor/completion/code_complete_delay = 0.01
+text_editor/completion/add_string_name_literals = true
+text_editor/completion/add_node_path_literals = true
+text_editor/external/use_external_editor = true
+editors/3d_gizmos/gizmo_settings/bone_axis_length = 0.1
+editors/3d/manipulator_gizmo_size = 40
+editors/animation/default_animation_step = 0.033333335
+run/window_placement/game_embed_mode = 1
+run/bottom_panel/action_on_play = 0
+run/bottom_panel/action_on_stop = 1
+run/platforms/linuxbsd/prefer_wayland = true
+network/connection/network_mode = 1
+debugger/auto_switch_to_remote_scene_tree = true
+project_manager/default_renderer = "mobile"
+export/macos/rcodesign = ""
+export/web/http_port = 8060
+export/web/tls_key = ""
+export/web/tls_certificate = ""
+export/windows/rcedit = ""
+export/windows/osslsigncode = ""
+export/windows/wine = ""
+_editor_settings_advanced_mode = true
+_project_settings_advanced_mode = true
+_export_template_download_directory = "/home/marco/.var/app/org.godotengine.Godot/cache/godot"
+_default_feature_profile = ""
+_script_setup_templates_dictionary = {
+"Area3D": "0NodeDefault",
+"BaseInputComponent": "0NodeDefault",
+"Label3D": "0NodeDefault",
+"Node": "0NodeDefault",
+"Node3": "0ObjectEmpty",
+"Node3D": "0ObjectEmpty",
+"RayCast3D": "0NodeDefault",
+"RefCounted": "0ObjectEmpty",
+"Resource": "0ObjectEmpty",
+"XROrigin3D": "0NodeDefault",
+"uState": "0NodeDefault"
+}
+_use_favorites_root_selection = false
+_script_setup_use_script_templates = true
+export/android/one_click_deploy_clear_previous_install = true
+debug_draw_3d/settings/telemetry_state = 2
+filesystem/external_programs/outline_order = PackedStringArray("Signals", "Constants", "Exported Properties", "Engine Callbacks", "Functions", "Properties", "Classes")
+version_control/action_on_play = 0
+plugin/script_ide/outline_position_right = false
+plugin/script_ide/hide_private_members = false
+plugin/script_ide/script_list_visible = true
+plugin/script_ide/auto_navigate_in_filesystem_dock = false
+plugin/script_ide/script_tabs_visible = false
+plugin/script_ide/outline_order = PackedStringArray("Constants", "Signals", "Exported Properties", "Properties", "Engine Callbacks", "Functions", "Classes")
+plugin/script_ide/open_outline_popup = SubResource("Shortcut_fhmmy")
+plugin/script_ide/open_scripts_popup = SubResource("Shortcut_0keyc")
+plugin/script_ide/open_quick_search_popup = SubResource("Shortcut_viho1")
+plugin/script_ide/open_override_popup = SubResource("Shortcut_8wxxo")
+plugin/script_ide/tab_cycle_forward = SubResource("Shortcut_eohw7")
+plugin/script_ide/tab_cycle_backward = SubResource("Shortcut_xhdve")
+plugin/script_ide/engine_callbacks = true
+plugin/script_ide/functions = true
+plugin/script_ide/signals = false
+plugin/script_ide/exported_properties = false
+plugin/script_ide/properties = false
+plugin/script_ide/classes = false
+plugin/script_ide/constants = false
+export/android/debug_keystore = "/home/marco/.var/app/org.godotengine.Godot/data/godot/keystores/debug.keystore"
+export/android/debug_keystore_pass = "android"
+export/android/java_sdk_path = "/usr/lib/sdk/openjdk17/jvm/openjdk-17"
+export/android/android_sdk_path = "/home/marco/.var/app/org.godotengine.Godot/data/cmdline-tools"
+plugin/script_ide/script_tabs_position_top = true
+plugin/script_ide/script_tabs_close_button_always = true
+plugin/script_ide/script_tabs_singleline = true
+gdquest_gdscript_formatter/format_on_save = false
+gdquest_gdscript_formatter/use_spaces = false
+gdquest_gdscript_formatter/indent_size = 4
+gdquest_gdscript_formatter/reorder_code = false
+gdquest_gdscript_formatter/safe_mode = true
+gdquest_gdscript_formatter/formatter_path = "/home/marco/.local/share/containers/ubuntu/.cache/godot/gdquest/gdscript-formatter"
+gdquest_gdscript_formatter/lint_on_save = false
+gdquest_gdscript_formatter/lint_line_length = 100
+gdquest_gdscript_formatter/lint_ignored_rules = ""
+gdquest_gdscript_formatter/shortcut = SubResource("Shortcut_boxt3")
+network/language_server/show_native_symbols_in_editor = true
+network/language_server/use_thread = true
+_export_preset_advanced_mode = false
+export/android/scrcpy/screen_size = "1920x1080/120"
+export/macos/actool = ""
+xr/openxr/runtime_paths = {
+"Monado": "/usr/share/openxr/1/openxr_monado.json",
+"SteamVR": "~/.steam/steam/steamapps/common/SteamVR/steamxr_linux64.json",
+"SteamVR Distrobox": "/home/marco/.local/share/containers/arch_vr/.local/share/Steam/steamapps/common/SteamVR/steamxr_linux64.json",
+"Wivrn": "/home/marco/.config/openxr/1/openxr_wivrn.json"
+}
+shortcuts = [{
+"name": "spatial_editor/viewport_zoom_modifier_1",
+"shortcuts": [SubResource("InputEventKey_70nmy")]
+}, {
+"name": "spatial_editor/viewport_zoom_modifier_2",
+"shortcuts": []
+}, {
+"name": "spatial_editor/instant_translate",
+"shortcuts": [SubResource("InputEventKey_viho1")]
+}, {
+"name": "spatial_editor/instant_rotate",
+"shortcuts": [SubResource("InputEventKey_fhmmy")]
+}, {
+"name": "spatial_editor/instant_scale",
+"shortcuts": [SubResource("InputEventKey_8wxxo")]
+}, {
+"name": "script_text_editor/fold_all_lines",
+"shortcuts": [SubResource("InputEventKey_0keyc")]
+}, {
+"name": "script_text_editor/goto_function",
+"shortcuts": []
+}]
