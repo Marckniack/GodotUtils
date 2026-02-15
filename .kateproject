@@ -2,7 +2,7 @@
   "name": "ProjectName",
   "files": [ {
              "directory": ".",
-             "filters": ["*.gd","*.godot","*.tscn"],
+             "filters": ["*.gd"],
              "recursive": 1
        } ],
   "exclude_patterns": [ "addons" ]
