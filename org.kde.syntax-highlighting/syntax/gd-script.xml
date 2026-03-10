@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE language SYSTEM "language.dtd">
-<language name="GDScript"
-          version="3"
+<language name="Godot"
+          version="4"
           kateversion="5.0"
           section="Scripts"
           extensions="*.gd"
@@ -314,7 +314,7 @@
                 <AnyChar attribute="Bracket" context="#stay" String="()[]{}"/>
 
                 <!-- Identifiers (variables and other names) -->
-                <RegExpr attribute="Normal Text" context="#stay" String="[a-zA-Z_][a-zA-Z0-9_]*"/>
+                <RegExpr attribute="Variable" context="#stay" String="[a-zA-Z_][a-zA-Z0-9_]*"/>
             </context>
 
             <!-- Regular Comments -->
@@ -402,6 +402,7 @@
         </contexts>
 
         <itemDatas>
+            <itemData name="Variable" defStyleNum="dsVariable"/>
             <itemData name="Normal Text" defStyleNum="dsNormal" spellChecking="false"/>
             <itemData name="Keyword" defStyleNum="dsKeyword" spellChecking="false"/>
             <itemData name="Constant" defStyleNum="dsConstant" spellChecking="false"/>
