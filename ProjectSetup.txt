@@ -1,6 +1,3 @@
-
-
-### C# PROJECT, POST INIT ###
 - Open project.godot;
 - Add / Replace :
 
@@ -10,13 +7,12 @@ naming/node_name_num_separator=2
 
 [debug]
 
-gdscript/warnings/untyped_declaration=1
-gdscript/warnings/inferred_declaration=1
-gdscript/warnings/unsafe_property_access=1
-gdscript/warnings/unsafe_method_access=1
-gdscript/warnings/unsafe_cast=1
-gdscript/warnings/unsafe_call_argument=1
-gdscript/warnings/integer_division=0
+gdscript/warnings/untyped_declaration=2
+gdscript/warnings/unsafe_property_access=2
+gdscript/warnings/unsafe_method_access=2
+gdscript/warnings/unsafe_cast=2
+gdscript/warnings/unsafe_call_argument=2
+gdscript/warnings/unsafe_void_return=2
 
 [layer_names]
 
